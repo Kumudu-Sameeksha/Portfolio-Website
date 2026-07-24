@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Kumudu-Sameeksha</title>
+  <link rel="stylesheet" href="projects.css" />
+  <script src="projects.js" defer></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo">Kumudu-Sameeksha</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="education.html" class="active">Education</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <h1>Projects</h1>
+    <div class="projects-container">
+      <div class="project-card" data-modal="modal1">
+        <img class="modal-image" src="re.png">
+        <h3>Website Redesign</h3>
+        <p>Redesign the Official website of Sri Lanka Tourism.</p>
+        <button class="btn">View Project</button>
+      </div>
+
+      <div class="project-card" data-modal="modal2">
+        <img class="modal-image" src="v1.png">
+        <h3>Vehicle Auction System</h3>
+        <p>A RESTful API for a vehicle auction platform, handling everything from listing cars to bidding and managing non-paying users.</p>
+        <button class="btn">View Project</button>
+      </div>
+
+      <div class="project-card" data-modal="modal3">
+        <img class="modal-image" src="mr1.png">
+        <h3>Mobile App Design</h3>
+        <p>Designed a mobile app for a sustainable waste management through Intelligent Technology.</p>
+        <button class="btn">View Project</button>
+      </div>
+
+      <div class="project-card" data-modal="modal4">
+        <img class="modal-image" src="e.png">
+        <h3>E-Commerce Website</h3>
+        <p>ElectroMart — Electronics E-Commerce Frontend</p>
+        <button class="btn">View Project</button>
+      </div>
+
+      <div class="project-card" data-modal="modal5">
+        <img class="modal-image" src="smart.png">
+        <h3>Educational Website</h3>
+        <p>MindBloom - Smart Study Assistant Website</p>
+        <button class="btn">View Project</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Website Redesign</h2>
+      <h3>Role:</h3> UI/UX Designer<br></br><h4>Description:</h4>
+
+<p>The official Sri Lanka Tourism website through a team-based UI/UX redesign using Figma, blending modern<p></p>
+<p>design principles with Sri Lanka’s cultural identity. The project involved restructuring information architecture, crafting<p></p>
+<p>high-fidelity wireframes and interactive prototypes, and applying responsive design techniques to ensure seamless<p></p>
+<p>experiences across devices. Design decisions were driven by usability, accessibility, and performance, resulting in an<p></p>
+<p>intuitive, visually engaging platform tailored for a global audience of travelers.<br></br></p>
+
+<h4>Key Contributions & Skills:</h4>
+<p>• UI/UX design using Figma<br></p>
+<p>• Wireframing, prototyping & design systems<br></p>
+<p>• Responsive and mobile-first layouts<br></p>
+<p>• Information architecture optimization<br></p>
+<p>• Collaborative design workflows and iteration</p>
+
+
+<div class="project-links">
+
+
+<a href="https://nsbm365-my.sharepoint.com/:v:/g/personal/dkkskulasuriya_students_nsbm_ac_lk/IQDNgMML1J3iQohWwsS659cDAeUcVHYw9Lu7aVeO1TPjlWc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5p6CZS"
+target="_blank">
+Live Demo
+</a>
+</div>
+
+</div>
+  </div>
+
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Vehicle Auction System</h2>
+      <h3>Role:</h3> UI/UX Designer/Front-End Developer<br></br>
+
+<h4>Description:</h4>
+
+<p>This RESTful API powers a vehicle auction platform. It allows users to create auctions by listing cars with details like make, model, year, and a minimum price. Buyers can browse and place bids. The system also manages the auction lifecycle, 
+including a robust process for handling non-paying bidders with a second-chance offer system and user penalties to ensure fairness.<br></br></p>
+
+<h4>Technologies Used:</h4>
+<p>C#, ASP.NET Core 9, PostgreSQL, Redis, React.js, WebSockets, Stripe API (with Escrow), JWT, Docker, AWS (EC2, RDS, ElastiCache)<br></br></p>
+
+<h4>Features:</h4>
+1. Auction Creation - <p>Users can list vehicles for auction with a specified brand, model, year, minimum price, and expiration date.<br><br></p>
+
+2. Bidding System - <p>Buyers can place bids on active auctions. The API validates bids to ensure they are higher than the current highest bid and meet the minimum price.<br><br>
+
+3. Non-Payment Handling - <p>A robust system is in place to manage non-paying bidders, including "second-chance" offers to the next highest bidder and a strike system to penalize non-compliant users.<br><br></p>
+
+4. User Authentication - <p>Secure user registration and login are handled to ensure that only authenticated users can perform actions like bidding and listing vehicles.<br></br></p>
+
+5. Real-Time Updates - <p>The system is designed to provide real-time updates on bids and auction status.</p>
+
+<div class="project-links">
+
+<a href="https://github.com/Kumudu-Sameeksha/Vehicle-Auction-System"
+target="_blank">
+GitHub
+</a>
+<a href="https://nsbm365-my.sharepoint.com/:v:/g/personal/dkkskulasuriya_students_nsbm_ac_lk/IQBYl6OhKePoQp764qAU1GMuAZ-hySO-n4gjvnJsBc0e0mQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=kGg8kL"
+target="_blank">
+Live Demo
+</a>
+</div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal3">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Mobile App Design</h2>
+      <h3>Role:</h3> UI/UX Designer/Front-End Developer<br></br>
+
+<h4>Description:</h4> <p>Waste management and recycling have become major concerns in modern
+society due to the increasing amount of household, commercial, and electronic
+waste generated every day.This project introduces BinGo, a mobile application developed to support users
+in making better waste diposal decisions through a simple and intelligent digital platform.</p><br></br>
+
+<h4>Features:</h4>
+<p>1. Intelligent Scanning - Capture or upload images of waste items for instant AI-based classification.</p>
+<p>2. Actionable Guidance - Receive disposal preparation instructions and recycling tips tailored to each item.</p>
+<p>3. Center Discovery - Find nearby recycling centers and facilities specialized in different waste types.</p>
+<p>4. Gamification - Earn points, badges, and rank on leaderboards to encourage sustainable behavior.</p><br></br>
+<h4>Technologies Used:</h4>
+<p>Mobile platform - Flutter, Dart</p>
+<p>Backend API - Express.js, TypeScript</p>
+<p>Database - MongoDB</p>
+<p>Artificial Intelligence - Google Gemini AI</p>
+<p>Security - JWT Authentication</p>
+
+<div class="project-links">
+
+<a href="https://github.com/Kumudu-Sameeksha/BinGo-Flutter-App"
+target="_blank">
+GitHub
+</a>
+<a href="https://nsbm365-my.sharepoint.com/:v:/g/personal/dkkskulasuriya_students_nsbm_ac_lk/IQBw8N1UxyiERJKYy07M9JZxAV_ZxAfVe_PyIRscSHs9Sss?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=h8oxct"
+target="_blank">
+Live Demo
+</a>
+</div>
+    </div>
+    </div>
+
+  <div class="modal" id="modal4">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>E-Commerce Website</h2>
+      <h3>Role:</h3> UI/UX Designer/Front-End Developer<br></br>
+
+<h4>Description:</h4> <p>A modern, fully responsive electronics e-commerce web application built with React, TypeScript, and Tailwind CSS. 
+  Inspired by premium e-commerce experiences like Apple Store and Best Buy.</p><br></br>
+<h4>Features:</h4>
+<p>1. Shopping Experience -Browse products across 9 categories — Smartphones, Laptops, Headphones, Tablets, Smartwatches, Cameras, Speakers, Gaming Accessories, Monitors </p>
+<p>2. Search & Filter - Real-time search by product name, Filter by category, brand, price range, and minimum rating</p>
+<p>3. Cart & checkout- Add, remove, and update quantities in cart, Full 3-step checkout flow — Address → Payment → Review</p>
+<p>4. user Account - Login & Signup pages with form validation and password strength meter, Profile page with 5 tabs</p>
+<p>5. Wishlist - Save products with heart icon from any page</p>
+<p>6. Homepage Section - Hero banner with CTA button</p>
+<p>7. Responsive Design - Mobile-first design that works on all screen sizes, Hamburger menu with full mobile navigation</p><br></br>
+<h4>Technologies Used:</h4>
+<p>React - UI component library</p>
+<p>TypeScript - Type-safe JavaScript</p>
+<p>Tailwind CSS - Utility-first CSS framework</p>
+<p>React Router DOM v6 - Client-side routing</p>
+<p>Vite - Build tool & dev server</p>
+<p>Context API - Global cart & wishlist state</p>
+<p>LocalStorage - Cart persistence across sessions</p>
+<p>Lucide React - Icon library</p>
+
+<div class="project-links">
+
+<a href="https://github.com/Kumudu-Sameeksha/ElectroMart"
+target="_blank">
+GitHub
+</a>
+<a href="https://nsbm365-my.sharepoint.com/:v:/g/personal/dkkskulasuriya_students_nsbm_ac_lk/IQDAZq6iuYcRTp4
+rNh3JDOvVAeHx6B1loWqE6QMphXzFe2g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJy
+YWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmF
+sTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=XeaiiC"
+target="_blank">
+Live Demo
+</a>
+</div>
+    </div>
+  </div>
+
+    
+
+    <div class="modal" id="modal5">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Smart Study Assistant</h2>
+      <h3>Role:</h3> UI/UX Designer/Front-End Developer<br></br>
+
+<h4>Description:</h4> <p>MindBloom is a modern Smart Study Assistant website designed to help students 
+  improve their learning experience through personalized study planning, interactive quizzes, and progress tracking. The frontend provides 
+  an intuitive, responsive, and user-friendly interface that enables students to organize their studies, monitor a
+  cademic performance, access educational resources, and stay motivated throughout their learning journey.<br></br></p>
+
+The website focuses on creating an engaging learning environment by combining clean UI/UX design with interactive 
+dashboards, AI-inspired features, and visual analytics. It allows students to efficiently manage their study schedules, 
+practice quizzes, read educational articles, and receive personalized recommendations based on their learning progress.</p><br></br>
+
+<h4>Features:</h4>
+<p>1. Landing Page</p>
+<p>2. Student Dashboard</p>
+<p>3. Study Planner</p>
+<p>4. Quiz Module</p>
+<p>5. Progress Tracking</p>
+<p>6. Learning Resources</p>
+<p>7. Notification Center</p>
+<h4>Technologies Used:</h4>
+<p>React.js</p>
+<p>JavaScript</p>
+<p>React Router DOM</p>
+<p>React Icons</p>
+
+<div class="project-links">
+
+<a href="https://github.com/Kumudu-Sameeksha/Smart-Study-Assistant-Website---MindBloom"
+target="_blank">
+GitHub
+</a>
+<a href="https://nsbm365-my.sharepoint.com/:v:/g/personal/dkkskulasuriya_students_nsbm_ac_lk/IQCKdBajzBYxTq_aGf0pA1QxAYfuorE
+IaqRMVyuVY863Ako?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmF
+sTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVz
+TGlua0NvcHkifX0&e=WnG6bU"
+target="_blank">
+Live Demo
+</a>
+</div>
+
+    
+    </div>
+  </div>
+</body>
+</html>

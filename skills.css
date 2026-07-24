@@ -1,0 +1,314 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1a0938, #0a1124);
+  color: #fff;
+}
+
+
+/* Navbar */
+header {
+  width: 100%;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: rgba(10, 17, 36, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100px;
+  padding: 20px 700px;
+  background: transparent;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #fff;
+}
+
+
+
+/* ================= SKILLS SECTION ================= */
+
+
+.skills {
+
+  margin: 120px auto 50px;
+
+  padding: 40px;
+
+  max-width: 1100px;
+
+  text-align: center;
+
+}
+
+
+
+.skills h1 {
+
+  font-size: 2.8rem;
+
+  margin-bottom: 50px;
+
+  font-weight: 700;
+
+}
+
+
+
+/* Skill Grid */
+
+.skills-container {
+
+  display: grid;
+
+  grid-template-columns: repeat(4,1fr);
+
+  gap: 30px;
+
+}
+
+
+
+
+/* ================= SKILL CARD ================= */
+
+
+.skill-card {
+
+
+  background:
+
+  rgba(15,18,43,0.9);
+
+
+  padding: 20px;
+  min-height: 180px;
+  width: 100%;
+
+
+  border-radius: 20px;
+
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+
+  box-shadow:
+
+  0 0 20px rgba(155,0,255,0.25);
+
+
+  text-align:center;
+
+
+  transition:0.4s ease;
+
+
+  cursor:pointer;
+
+
+}
+
+
+
+/* Skill Icons */
+
+.skill-card i {
+
+  font-size:65px;
+
+  margin-bottom:20px;
+
+  transition:0.4s ease;
+
+}
+
+
+
+/* Skill Title */
+
+.skill-card h3 {
+
+  font-size:1.3rem;
+
+  margin-bottom:10px;
+
+}
+
+
+
+.skill-card p {
+
+  color:#c5c5c5;
+
+  font-size:0.9rem;
+
+}
+
+
+
+
+/* Hover Popup Animation */
+
+
+.skill-card:hover {
+
+
+  transform:
+
+  translateY(-15px)
+
+  scale(1.05);
+
+
+  background:
+
+  rgba(25,20,60,0.95);
+
+
+  box-shadow:
+
+  0 0 35px rgba(255,0,217,0.5);
+
+
+}
+
+
+
+.skill-card:hover i {
+
+
+  transform:
+
+  scale(1.25)
+
+  rotate(8deg);
+
+
+}
+
+
+
+/* ================= SOFT SKILL ICON COLORS ================= */
+
+
+.fa-comments {
+
+  color:#38bdf8;
+
+}
+
+
+.fa-people-group {
+
+  color:#22c55e;
+
+}
+
+
+.fa-user-tie {
+
+  color:#a855f7;
+
+}
+
+
+.fa-clock {
+
+  color:#fb923c;
+
+}
+
+
+.fa-lightbulb {
+
+  color:#facc15;
+
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+
+@media(max-width:900px){
+
+
+  .skills-container {
+
+    grid-template-columns:repeat(2,1fr);
+
+  }
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+  header {
+
+    padding:20px;
+
+  }
+
+
+  .nav-links {
+
+    display:none;
+
+  }
+
+
+  .skills {
+
+    padding:20px;
+
+  }
+
+
+  .skills-container {
+
+    grid-template-columns:1fr;
+
+  }
+
+
+}

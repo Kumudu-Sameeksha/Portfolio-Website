@@ -1,0 +1,433 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1a0938, #0a1124);
+  color: #fff;
+  padding: 50px 5%;
+}
+
+/* Navbar */
+header {
+  width: 100%;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: rgba(10, 17, 36, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100px;
+  padding: 20px 700px;
+  background: transparent;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+
+  
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+  
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #fff;
+  
+}
+
+/* Hero Section */
+/* ================= HERO ================= */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 120px 80px;
+  min-height: 50vh;
+
+  gap: 50px;
+
+  background: radial-gradient(circle at left, #3b0c7c, #0a1124);
+
+  border-radius: 20px;
+  margin: 40px;
+
+  box-shadow: 0 0 40px rgba(130, 20, 250, 0.4);
+
+  overflow: hidden;
+
+  animation: fadeIn 1s ease;
+}
+
+
+/* Hero Content */
+
+.hero-content {
+
+  max-width: 600px;
+
+  animation: slideLeft 1s ease;
+
+}
+
+
+.hero-content h1 {
+
+  font-size: 3rem;
+  font-weight: 700;
+
+  color: #ffffff;
+
+  animation: textGlow 3s infinite alternate;
+
+}
+
+
+.hero-content h3 {
+
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  color: #b5aaff;
+
+  margin: 10px 0;
+
+}
+
+
+.hero-content p {
+
+  margin: 20px 0;
+
+  line-height: 1.8;
+
+  color: #c9c9d8;
+
+}
+
+
+
+/* Buttons Area */
+
+.buttons {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+}
+
+
+/* Download Button */
+
+.btn {
+
+  background: #fff;
+
+  color: #000;
+
+  padding: 12px 30px;
+
+  border-radius: 30px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: .4s;
+
+  box-shadow: 0 0 15px rgba(255,255,255,.3);
+
+}
+
+
+.btn:hover {
+
+  background: #9b00ff;
+
+  color: #fff;
+
+  transform: translateY(-5px);
+
+  box-shadow:0 0 25px #9b00ff;
+
+}
+
+
+
+/* Social Icons */
+
+.social-icons {
+
+  display:flex;
+
+  gap:15px;
+
+}
+
+
+.social-icons a {
+
+  color:#fff;
+
+  font-size:1.4rem;
+
+  width:45px;
+
+  height:45px;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  border-radius:50%;
+
+  border:1px solid rgba(255,255,255,.3);
+
+  transition:.4s;
+
+}
+
+
+.social-icons a:hover {
+
+  color:#ff00d9;
+
+  background:rgba(255,255,255,.1);
+
+  transform:translateY(-8px) rotate(360deg);
+
+  box-shadow:0 0 20px #ff00d9;
+
+}
+
+
+
+/* ================= PROFILE IMAGE ================= */
+
+
+.hero-image {
+
+  animation: slideRight 1s ease;
+
+}
+
+
+.hero-image img {
+
+  width:300px;
+
+  height:300px;
+
+  object-fit:cover;
+
+  border-radius:50%;
+
+  border:4px solid #fff;
+
+  box-shadow: 
+    0 0 20px #ff00e5,
+    0 0 40px #7f00ff;
+
+
+  animation: floating 5s ease-in-out infinite;
+
+  transition:.5s;
+
+}
+
+
+
+.hero-image img:hover {
+
+  transform:scale(1.08);
+
+  box-shadow:
+    0 0 30px #ff00e5,
+    0 0 60px #7f00ff;
+
+}
+
+
+
+/* ================= ANIMATIONS ================= */
+
+
+@keyframes floating {
+
+0% {
+
+transform:translateY(0);
+
+}
+
+50% {
+
+transform:translateY(-20px);
+
+}
+
+100% {
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+@keyframes slideLeft {
+
+from {
+
+opacity:0;
+
+transform:translateX(-60px);
+
+}
+
+to {
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+
+
+@keyframes slideRight {
+
+from {
+
+opacity:0;
+
+transform:translateX(60px);
+
+}
+
+to {
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+
+
+@keyframes fadeIn {
+
+from {
+
+opacity:0;
+
+}
+
+to {
+
+opacity:1;
+
+}
+
+}
+
+
+
+@keyframes textGlow {
+
+from {
+
+text-shadow:0 0 5px #ffffff;
+
+}
+
+to {
+
+text-shadow:0 0 20px #9b00ff;
+
+}
+
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column-reverse;
+
+padding:80px 30px;
+
+text-align:center;
+
+}
+
+
+.hero-content h1{
+
+font-size:2.2rem;
+
+}
+
+
+.buttons{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+
+.hero-image img{
+
+width:240px;
+
+height:240px;
+
+}
+
+}
