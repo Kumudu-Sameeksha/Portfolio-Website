@@ -28,6 +28,6 @@ The website features a modern interface with dedicated sections for About, Techn
 
 I am currently seeking software Engineering, Frontend Development, and UI/UX Internship opportunities, where I can apply my skills, collaborate with experienced professionals, and contribute to innovative software solutions while continuing to grow as a developer.
 
-🔗 Live Demo: https://portfolio-website-virid-ten-79.vercel.app/
+🔗 Live Demo: https://portfolio-website-va8u.vercel.app/
 
 💻 GitHub Repository: https://github.com/Kumudu-Sameeksha/Portfolio-Website   
